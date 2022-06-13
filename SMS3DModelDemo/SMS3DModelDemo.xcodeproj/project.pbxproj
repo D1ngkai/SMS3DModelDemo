@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06A92856E75300B5B014 /* AppDelegate.m */; };
+		15BE06AD2856E75300B5B014 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06AC2856E75300B5B014 /* SceneDelegate.m */; };
+		15BE06B02856E75300B5B014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06AF2856E75300B5B014 /* ViewController.m */; };
+		15BE06B32856E75300B5B014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BE06B12856E75300B5B014 /* Main.storyboard */; };
+		15BE06B52856E75400B5B014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BE06B42856E75400B5B014 /* Assets.xcassets */; };
+		15BE06B82856E75400B5B014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BE06B62856E75400B5B014 /* LaunchScreen.storyboard */; };
+		15BE06BB2856E75400B5B014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06BA2856E75400B5B014 /* main.m */; };
+		15BE06C52856E75500B5B014 /* SMS3DModelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06C42856E75500B5B014 /* SMS3DModelDemoTests.m */; };
+		15BE06CF2856E75500B5B014 /* SMS3DModelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06CE2856E75500B5B014 /* SMS3DModelDemoUITests.m */; };
+		15BE06D12856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15BE06C12856E75500B5B014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15BE069D2856E75300B5B014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BE06A42856E75300B5B014;
+			remoteInfo = SMS3DModelDemo;
+		};
+		15BE06CB2856E75500B5B014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15BE069D2856E75300B5B014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BE06A42856E75300B5B014;
+			remoteInfo = SMS3DModelDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15BE06A52856E75300B5B014 /* SMS3DModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMS3DModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BE06A82856E75300B5B014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15BE06A92856E75300B5B014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15BE06AB2856E75300B5B014 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		15BE06AC2856E75300B5B014 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		15BE06AE2856E75300B5B014 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		15BE06AF2856E75300B5B014 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15BE06B22856E75300B5B014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15BE06B42856E75400B5B014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15BE06B72856E75400B5B014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15BE06B92856E75400B5B014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BE06BA2856E75400B5B014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15BE06C02856E75500B5B014 /* SMS3DModelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMS3DModelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BE06C42856E75500B5B014 /* SMS3DModelDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS3DModelDemoTests.m; sourceTree = "<group>"; };
+		15BE06CA2856E75500B5B014 /* SMS3DModelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMS3DModelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BE06CE2856E75500B5B014 /* SMS3DModelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS3DModelDemoUITests.m; sourceTree = "<group>"; };
+		15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS3DModelDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15BE06A22856E75300B5B014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BE06BD2856E75500B5B014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BE06C72856E75500B5B014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15BE069C2856E75300B5B014 = {
+			isa = PBXGroup;
+			children = (
+				15BE06A72856E75300B5B014 /* SMS3DModelDemo */,
+				15BE06C32856E75500B5B014 /* SMS3DModelDemoTests */,
+				15BE06CD2856E75500B5B014 /* SMS3DModelDemoUITests */,
+				15BE06A62856E75300B5B014 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15BE06A62856E75300B5B014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15BE06A52856E75300B5B014 /* SMS3DModelDemo.app */,
+				15BE06C02856E75500B5B014 /* SMS3DModelDemoTests.xctest */,
+				15BE06CA2856E75500B5B014 /* SMS3DModelDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15BE06A72856E75300B5B014 /* SMS3DModelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				15BE06A82856E75300B5B014 /* AppDelegate.h */,
+				15BE06A92856E75300B5B014 /* AppDelegate.m */,
+				15BE06AB2856E75300B5B014 /* SceneDelegate.h */,
+				15BE06AC2856E75300B5B014 /* SceneDelegate.m */,
+				15BE06AE2856E75300B5B014 /* ViewController.h */,
+				15BE06AF2856E75300B5B014 /* ViewController.m */,
+				15BE06B12856E75300B5B014 /* Main.storyboard */,
+				15BE06B42856E75400B5B014 /* Assets.xcassets */,
+				15BE06B62856E75400B5B014 /* LaunchScreen.storyboard */,
+				15BE06B92856E75400B5B014 /* Info.plist */,
+				15BE06BA2856E75400B5B014 /* main.m */,
+			);
+			path = SMS3DModelDemo;
+			sourceTree = "<group>";
+		};
+		15BE06C32856E75500B5B014 /* SMS3DModelDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				15BE06C42856E75500B5B014 /* SMS3DModelDemoTests.m */,
+			);
+			path = SMS3DModelDemoTests;
+			sourceTree = "<group>";
+		};
+		15BE06CD2856E75500B5B014 /* SMS3DModelDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15BE06CE2856E75500B5B014 /* SMS3DModelDemoUITests.m */,
+				15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */,
+			);
+			path = SMS3DModelDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15BE06A42856E75300B5B014 /* SMS3DModelDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BE06D42856E75500B5B014 /* Build configuration list for PBXNativeTarget "SMS3DModelDemo" */;
+			buildPhases = (
+				15BE06A12856E75300B5B014 /* Sources */,
+				15BE06A22856E75300B5B014 /* Frameworks */,
+				15BE06A32856E75300B5B014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMS3DModelDemo;
+			productName = SMS3DModelDemo;
+			productReference = 15BE06A52856E75300B5B014 /* SMS3DModelDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15BE06BF2856E75500B5B014 /* SMS3DModelDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BE06D72856E75500B5B014 /* Build configuration list for PBXNativeTarget "SMS3DModelDemoTests" */;
+			buildPhases = (
+				15BE06BC2856E75500B5B014 /* Sources */,
+				15BE06BD2856E75500B5B014 /* Frameworks */,
+				15BE06BE2856E75500B5B014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BE06C22856E75500B5B014 /* PBXTargetDependency */,
+			);
+			name = SMS3DModelDemoTests;
+			productName = SMS3DModelDemoTests;
+			productReference = 15BE06C02856E75500B5B014 /* SMS3DModelDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15BE06C92856E75500B5B014 /* SMS3DModelDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BE06DA2856E75500B5B014 /* Build configuration list for PBXNativeTarget "SMS3DModelDemoUITests" */;
+			buildPhases = (
+				15BE06C62856E75500B5B014 /* Sources */,
+				15BE06C72856E75500B5B014 /* Frameworks */,
+				15BE06C82856E75500B5B014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BE06CC2856E75500B5B014 /* PBXTargetDependency */,
+			);
+			name = SMS3DModelDemoUITests;
+			productName = SMS3DModelDemoUITests;
+			productReference = 15BE06CA2856E75500B5B014 /* SMS3DModelDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15BE069D2856E75300B5B014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					15BE06A42856E75300B5B014 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					15BE06BF2856E75500B5B014 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 15BE06A42856E75300B5B014;
+					};
+					15BE06C92856E75500B5B014 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 15BE06A42856E75300B5B014;
+					};
+				};
+			};
+			buildConfigurationList = 15BE06A02856E75300B5B014 /* Build configuration list for PBXProject "SMS3DModelDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15BE069C2856E75300B5B014;
+			productRefGroup = 15BE06A62856E75300B5B014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15BE06A42856E75300B5B014 /* SMS3DModelDemo */,
+				15BE06BF2856E75500B5B014 /* SMS3DModelDemoTests */,
+				15BE06C92856E75500B5B014 /* SMS3DModelDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15BE06A32856E75300B5B014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BE06B82856E75400B5B014 /* LaunchScreen.storyboard in Resources */,
+				15BE06B52856E75400B5B014 /* Assets.xcassets in Resources */,
+				15BE06B32856E75300B5B014 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BE06BE2856E75500B5B014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BE06C82856E75500B5B014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15BE06A12856E75300B5B014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BE06B02856E75300B5B014 /* ViewController.m in Sources */,
+				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
+				15BE06BB2856E75400B5B014 /* main.m in Sources */,
+				15BE06AD2856E75300B5B014 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BE06BC2856E75500B5B014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BE06C52856E75500B5B014 /* SMS3DModelDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BE06C62856E75500B5B014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BE06D12856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m in Sources */,
+				15BE06CF2856E75500B5B014 /* SMS3DModelDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15BE06C22856E75500B5B014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15BE06A42856E75300B5B014 /* SMS3DModelDemo */;
+			targetProxy = 15BE06C12856E75500B5B014 /* PBXContainerItemProxy */;
+		};
+		15BE06CC2856E75500B5B014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15BE06A42856E75300B5B014 /* SMS3DModelDemo */;
+			targetProxy = 15BE06CB2856E75500B5B014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15BE06B12856E75300B5B014 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15BE06B22856E75300B5B014 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15BE06B62856E75400B5B014 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15BE06B72856E75400B5B014 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15BE06D22856E75500B5B014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15BE06D32856E75500B5B014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15BE06D52856E75500B5B014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SMS3DModelDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sms.demo.SMS3DModelDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15BE06D62856E75500B5B014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SMS3DModelDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sms.demo.SMS3DModelDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15BE06D82856E75500B5B014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sms.demo.SMS3DModelDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMS3DModelDemo.app/SMS3DModelDemo";
+			};
+			name = Debug;
+		};
+		15BE06D92856E75500B5B014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sms.demo.SMS3DModelDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMS3DModelDemo.app/SMS3DModelDemo";
+			};
+			name = Release;
+		};
+		15BE06DB2856E75500B5B014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sms.demo.SMS3DModelDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMS3DModelDemo;
+			};
+			name = Debug;
+		};
+		15BE06DC2856E75500B5B014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sms.demo.SMS3DModelDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMS3DModelDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15BE06A02856E75300B5B014 /* Build configuration list for PBXProject "SMS3DModelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BE06D22856E75500B5B014 /* Debug */,
+				15BE06D32856E75500B5B014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BE06D42856E75500B5B014 /* Build configuration list for PBXNativeTarget "SMS3DModelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BE06D52856E75500B5B014 /* Debug */,
+				15BE06D62856E75500B5B014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BE06D72856E75500B5B014 /* Build configuration list for PBXNativeTarget "SMS3DModelDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BE06D82856E75500B5B014 /* Debug */,
+				15BE06D92856E75500B5B014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BE06DA2856E75500B5B014 /* Build configuration list for PBXNativeTarget "SMS3DModelDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BE06DB2856E75500B5B014 /* Debug */,
+				15BE06DC2856E75500B5B014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15BE069D2856E75300B5B014 /* Project object */;
+}
