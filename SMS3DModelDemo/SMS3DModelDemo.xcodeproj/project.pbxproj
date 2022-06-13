@@ -16,6 +16,7 @@
 		15BE06C52856E75500B5B014 /* SMS3DModelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06C42856E75500B5B014 /* SMS3DModelDemoTests.m */; };
 		15BE06CF2856E75500B5B014 /* SMS3DModelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06CE2856E75500B5B014 /* SMS3DModelDemoUITests.m */; };
 		15BE06D12856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */; };
+		15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		15BE06CA2856E75500B5B014 /* SMS3DModelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMS3DModelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BE06CE2856E75500B5B014 /* SMS3DModelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS3DModelDemoUITests.m; sourceTree = "<group>"; };
 		15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS3DModelDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		15BE06DE28573C4F00B5B014 /* SMSGLDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLDevice.h; sourceTree = "<group>"; };
+		15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		15BE06A72856E75300B5B014 /* SMS3DModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				15BE06DD28573C3B00B5B014 /* GL */,
 				15BE06A82856E75300B5B014 /* AppDelegate.h */,
 				15BE06A92856E75300B5B014 /* AppDelegate.m */,
 				15BE06AE2856E75300B5B014 /* ViewController.h */,
@@ -129,6 +133,15 @@
 				15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */,
 			);
 			path = SMS3DModelDemoUITests;
+			sourceTree = "<group>";
+		};
+		15BE06DD28573C3B00B5B014 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				15BE06DE28573C4F00B5B014 /* SMSGLDevice.h */,
+				15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */,
+			);
+			path = GL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			files = (
 				15BE06B02856E75300B5B014 /* ViewController.m in Sources */,
 				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
+				15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */,
 				15BE06BB2856E75400B5B014 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +451,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COREVIDEO_SILENCE_GL_DEPRECATION=1",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SMS3DModelDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -467,6 +486,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4G4UWA4M63;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COREVIDEO_SILENCE_GL_DEPRECATION=1",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SMS3DModelDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
