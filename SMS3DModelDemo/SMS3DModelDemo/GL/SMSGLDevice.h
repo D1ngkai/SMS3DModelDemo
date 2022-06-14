@@ -11,7 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SMSGLDevice : NSObject
 
+#pragma mark - EAGLContext
+
 - (EAGLContext *)eaglContext;
+
+- (BOOL)makeCurrent;
+
+#pragma mark - Texture
 
 - (CVOpenGLESTextureCacheRef)textureCache;
 

@@ -17,6 +17,7 @@
 		15BE06CF2856E75500B5B014 /* SMS3DModelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06CE2856E75500B5B014 /* SMS3DModelDemoUITests.m */; };
 		15BE06D12856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */; };
 		15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */; };
+		15BE06E32857680300B5B014 /* SMSGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06E22857680300B5B014 /* SMSGLContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS3DModelDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
 		15BE06DE28573C4F00B5B014 /* SMSGLDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLDevice.h; sourceTree = "<group>"; };
 		15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLDevice.m; sourceTree = "<group>"; };
+		15BE06E12857680300B5B014 /* SMSGLContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLContext.h; sourceTree = "<group>"; };
+		15BE06E22857680300B5B014 /* SMSGLContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 			children = (
 				15BE06DE28573C4F00B5B014 /* SMSGLDevice.h */,
 				15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */,
+				15BE06E12857680300B5B014 /* SMSGLContext.h */,
+				15BE06E22857680300B5B014 /* SMSGLContext.m */,
 			);
 			path = GL;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BE06E32857680300B5B014 /* SMSGLContext.m in Sources */,
 				15BE06B02856E75300B5B014 /* ViewController.m in Sources */,
 				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
 				15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */,

@@ -17,6 +17,13 @@
 
 @implementation SMSGLDevice
 
+- (void)dealloc {
+    if (_textureCache != nil) {
+        CFRelease(_textureCache);
+        _textureCache = nil;
+    }
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -27,6 +34,14 @@
 
 - (EAGLContext *)eaglContext {
     return _eaglContext;
+}
+
+- (BOOL)makeCurrent {
+    EAGLContext *current = [EAGLContext currentContext];
+    if (_eaglContext != current) {
+        return [EAGLContext setCurrentContext:_eaglContext];
+    }
+    return YES;
 }
 
 - (CVOpenGLESTextureCacheRef)textureCache {
