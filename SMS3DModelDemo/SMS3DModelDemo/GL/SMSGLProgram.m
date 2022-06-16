@@ -14,7 +14,6 @@
     @private
     NSString *_fragmentShaderString;
     NSString *_vertexShaderString;
-    NSString *_uniqueKey;
     GLuint _programHandle;
 }
 
@@ -28,9 +27,6 @@
     if (self) {
         _vertexShaderString = [vertexShaderString copy];
         _fragmentShaderString = [fragmentShaderString copy];
-        _uniqueKey = [NSString stringWithFormat:@"v: %@, f: %@",
-                      vertexShaderString,
-                      fragmentShaderString];
 
         [self p_setupGLProgram];
     }
@@ -98,10 +94,5 @@
         _programHandle = 0;
     }
 }
-
-- (NSString *)uniqueKey {
-    return _uniqueKey;
-}
-
 
 @end
