@@ -49,6 +49,14 @@ static void *SMSGLContextRenderingQueueKey;
     return self;
 }
 
+- (void)releaseContext {
+    [self syncOnRenderingQueue:^{
+        [self.device makeCurrent];
+        [self.programCache enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, SMSGLProgram * _Nonnull obj, BOOL * _Nonnull stop) {
+            [obj deleteProgram];
+        }];
+    }];
+}
 
 - (SMSGLProgram *)programWithVertexShaderString:(NSString *)vertexShaderString
                            fragmentShaderString:(NSString *)fragmentShaderString {
@@ -57,12 +65,10 @@ static void *SMSGLContextRenderingQueueKey;
     if (self.programCache[key]) {
         program = self.programCache[key];
     } else {
-        __weak typeof(self) weakSelf = self;
         [self syncOnRenderingQueue:^{
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            [strongSelf.device makeCurrent];
+            [self.device makeCurrent];
             program = [[SMSGLProgram alloc] initWithVertexShaderString:vertexShaderString fragmentShaderString:fragmentShaderString];
-            strongSelf.programCache[key] = program;
+            self.programCache[key] = program;
         }];
     }
 

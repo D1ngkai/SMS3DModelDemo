@@ -84,6 +84,10 @@
     return shader;
 }
 
+- (int)programHandle {
+    return (int)_programHandle;
+}
+
 - (void)use {
     glUseProgram(_programHandle);
 }

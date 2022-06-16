@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithVertexShaderString:(NSString *)vertexShaderString
                       fragmentShaderString:(NSString *)fragmentShaderString;
 
+- (int)programHandle;
+
 - (void)use;
 
 - (void)deleteProgram;
