@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154A865F285B2006009263EE /* SMSGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A865E285B2006009263EE /* SMSGLProgram.m */; };
 		15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06A92856E75300B5B014 /* AppDelegate.m */; };
 		15BE06B02856E75300B5B014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06AF2856E75300B5B014 /* ViewController.m */; };
 		15BE06B32856E75300B5B014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BE06B12856E75300B5B014 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154A865D285B2006009263EE /* SMSGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLProgram.h; sourceTree = "<group>"; };
+		154A865E285B2006009263EE /* SMSGLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLProgram.m; sourceTree = "<group>"; };
 		15BE06A52856E75300B5B014 /* SMS3DModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMS3DModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BE06A82856E75300B5B014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15BE06A92856E75300B5B014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */,
 				15BE06E12857680300B5B014 /* SMSGLContext.h */,
 				15BE06E22857680300B5B014 /* SMSGLContext.m */,
+				154A865D285B2006009263EE /* SMSGLProgram.h */,
+				154A865E285B2006009263EE /* SMSGLProgram.m */,
 			);
 			path = GL;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
 				15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */,
 				15BE06BB2856E75400B5B014 /* main.m in Sources */,
+				154A865F285B2006009263EE /* SMSGLProgram.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
