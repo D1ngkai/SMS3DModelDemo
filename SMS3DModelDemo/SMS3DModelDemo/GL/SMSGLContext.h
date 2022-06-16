@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SMSGLDevice;
+@class SMSGLDevice, SMSGLProgram;
 
 @interface SMSGLContext : NSObject
 
@@ -19,6 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) SMSGLDevice *device;
 
+#pragma mark - Program
+- (SMSGLProgram *)programWithVertexShaderString:(NSString *)vertexShaderString
+                           fragmentShaderString:(NSString *)fragmentShaderString;
+
+#pragma mark - Rendering Queue
 - (void)asyncOnRenderingQueue:(dispatch_block_t)block;
 - (void)syncOnRenderingQueue:(dispatch_block_t)block;
 

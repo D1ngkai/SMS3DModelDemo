@@ -7,6 +7,9 @@
 
 #import "SMSGLContext.h"
 
+#import "SMSGLProgram.h"
+#import "SMSGLDevice.h"
+
 static void *SMSGLContextRenderingQueueKey;
 
 @interface SMSGLContext () {
@@ -15,6 +18,8 @@ static void *SMSGLContextRenderingQueueKey;
 }
 
 @property (nonatomic) SMSGLDevice *device;
+
+@property (nonatomic) NSMutableDictionary<NSString *, SMSGLProgram *> *programCache;
 
 @end
 
@@ -28,6 +33,7 @@ static void *SMSGLContextRenderingQueueKey;
     if (self) {
         _device = device;
 
+        // Rendering Queue
         SMSGLContextRenderingQueueKey = &SMSGLContextRenderingQueueKey;
         _renderingQueue = dispatch_queue_create("com.sms.renderingQueue",
                                                 NULL);
@@ -35,11 +41,41 @@ static void *SMSGLContextRenderingQueueKey;
                                     SMSGLContextRenderingQueueKey,
                                     (void *)SMSGLContextRenderingQueueKey,
                                     NULL);
+
+        // Program Cache
+        _programCache = @{}.mutableCopy;
     }
 
     return self;
 }
 
+
+- (SMSGLProgram *)programWithVertexShaderString:(NSString *)vertexShaderString
+                           fragmentShaderString:(NSString *)fragmentShaderString {
+    __block SMSGLProgram *program;
+    NSString *key = [self p_uniqueKeyWithVertexShaderString:vertexShaderString fragmentShaderString:fragmentShaderString];
+    if (self.programCache[key]) {
+        program = self.programCache[key];
+    } else {
+        __weak typeof(self) weakSelf = self;
+        [self syncOnRenderingQueue:^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            [strongSelf.device makeCurrent];
+            program = [[SMSGLProgram alloc] initWithVertexShaderString:vertexShaderString fragmentShaderString:fragmentShaderString];
+            strongSelf.programCache[key] = program;
+        }];
+    }
+
+    return program;
+}
+
+- (NSString *)p_uniqueKeyWithVertexShaderString:(NSString *)vertexShaderString
+                           fragmentShaderString:(NSString *)fragmentShaderString {
+    NSString *str =[NSString stringWithFormat:@"v: %@, f: %@",
+                    vertexShaderString,
+                    fragmentShaderString];
+    return str;
+}
 
 - (void)asyncOnRenderingQueue:(dispatch_block_t)block {
     if (dispatch_get_specific(SMSGLContextRenderingQueueKey)) {

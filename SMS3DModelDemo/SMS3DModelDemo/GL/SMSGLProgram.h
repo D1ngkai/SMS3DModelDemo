@@ -20,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)deleteProgram;
 
-@property (nonatomic, readonly) NSUUID *uniqueKey;
-
 @end
 
 NS_ASSUME_NONNULL_END
