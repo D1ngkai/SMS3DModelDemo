@@ -67,12 +67,4 @@
     return _textureCache;
 }
 
-- (void)releaseTexture:(CVOpenGLESTextureRef)texture {
-    if (texture == nil || _textureCache == nil) {
-        return;
-    }
-    CFRelease(texture);
-    CVOpenGLESTextureCacheFlush(_textureCache, 0);
-}
-
 @end

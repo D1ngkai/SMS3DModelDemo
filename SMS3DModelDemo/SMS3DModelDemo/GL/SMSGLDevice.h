@@ -21,8 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CVOpenGLESTextureCacheRef)textureCache;
 
-- (void)releaseTexture:(CVOpenGLESTextureRef)texture;
-
 @end
 
 NS_ASSUME_NONNULL_END

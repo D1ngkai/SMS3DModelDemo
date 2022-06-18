@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SMSGLTexture.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class SMSGLDevice, SMSGLProgram;
@@ -19,11 +21,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) SMSGLDevice *device;
 
-- (void)releaseContext;
+
+- (BOOL)makeCurrent;
 
 #pragma mark - Program
 - (SMSGLProgram *)programWithVertexShaderString:(NSString *)vertexShaderString
                            fragmentShaderString:(NSString *)fragmentShaderString;
+
+- (void)flushProgramCache;
+
+#pragma mark - Texture
+- (id<SMSGLTexture>)makeBGRATextureWithPixelBuffer:(CVPixelBufferRef)pixelBuffer;
+- (id<SMSGLTexture>)makeEmptyBGRATextureWithSize:(CGSize)size;
+
+- (void)flushTextureCache;
 
 #pragma mark - Rendering Queue
 - (void)asyncOnRenderingQueue:(dispatch_block_t)block;
