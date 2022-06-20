@@ -21,9 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) SMSGLDevice *device;
 
-
-- (BOOL)makeCurrent;
-
 #pragma mark - Program
 - (SMSGLProgram *)programWithVertexShaderString:(NSString *)vertexShaderString
                            fragmentShaderString:(NSString *)fragmentShaderString;

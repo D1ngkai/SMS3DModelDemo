@@ -30,6 +30,8 @@ static void *SMSGLContextRenderingQueueKey;
 @implementation SMSGLContext
 
 - (void)dealloc {
+    [self flushProgramCache];
+    [self flushTextureCache];
 }
 
 - (instancetype)initWithDevice:(SMSGLDevice *)device {
@@ -53,12 +55,6 @@ static void *SMSGLContextRenderingQueueKey;
     }
 
     return self;
-}
-
-
-
-- (BOOL)makeCurrent {
-    return [self.device makeCurrent];
 }
 
 #pragma mark - Program
