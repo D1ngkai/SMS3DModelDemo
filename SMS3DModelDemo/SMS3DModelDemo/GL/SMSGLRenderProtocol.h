@@ -13,12 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SMSGLRenderProtocol <NSObject>
 
-@optional
-- (void)drawTexture:(id<SMSGLTexture>)texture
-           onCanvas:(id<SMSGLTexture>)canvas;
-
-- (void)drawTexture0:(id<SMSGLTexture>)texture0
-            texture1:(id<SMSGLTexture>)texture1
+- (void)drawTexture:(NSArray<id<SMSGLTexture>> *)textures
            onCanvas:(id<SMSGLTexture>)canvas;
 
 @end

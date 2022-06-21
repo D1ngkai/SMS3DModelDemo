@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		1515FA2728616E34007A8CE8 /* SMSGLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515FA2628616E34007A8CE8 /* SMSGLFilter.m */; };
 		1515FA2928617519007A8CE8 /* SMSGLVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1515FA2828617519007A8CE8 /* SMSGLVertex.glsl */; };
-		1515FA2B286175AE007A8CE8 /* SMSGLPasstroughFragment_OneInput.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment_OneInput.glsl */; };
-		1515FA2D28617676007A8CE8 /* SMSGLPasstroughFragment_TwoInput.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1515FA2C28617676007A8CE8 /* SMSGLPasstroughFragment_TwoInput.glsl */; };
+		1515FA2B286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl */; };
 		154A865F285B2006009263EE /* SMSGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A865E285B2006009263EE /* SMSGLProgram.m */; };
 		15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06A92856E75300B5B014 /* AppDelegate.m */; };
 		15BE06B02856E75300B5B014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06AF2856E75300B5B014 /* ViewController.m */; };
@@ -49,8 +48,7 @@
 		1515FA2528616E34007A8CE8 /* SMSGLFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLFilter.h; sourceTree = "<group>"; };
 		1515FA2628616E34007A8CE8 /* SMSGLFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLFilter.m; sourceTree = "<group>"; };
 		1515FA2828617519007A8CE8 /* SMSGLVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SMSGLVertex.glsl; sourceTree = "<group>"; };
-		1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment_OneInput.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SMSGLPasstroughFragment_OneInput.glsl; sourceTree = "<group>"; };
-		1515FA2C28617676007A8CE8 /* SMSGLPasstroughFragment_TwoInput.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SMSGLPasstroughFragment_TwoInput.glsl; sourceTree = "<group>"; };
+		1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SMSGLPasstroughFragment.glsl; sourceTree = "<group>"; };
 		154A865D285B2006009263EE /* SMSGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLProgram.h; sourceTree = "<group>"; };
 		154A865E285B2006009263EE /* SMSGLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLProgram.m; sourceTree = "<group>"; };
 		15BE06A52856E75300B5B014 /* SMS3DModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMS3DModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,8 +167,7 @@
 				15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */,
 				1515FA2528616E34007A8CE8 /* SMSGLFilter.h */,
 				1515FA2628616E34007A8CE8 /* SMSGLFilter.m */,
-				1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment_OneInput.glsl */,
-				1515FA2C28617676007A8CE8 /* SMSGLPasstroughFragment_TwoInput.glsl */,
+				1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl */,
 				54EA4EFB285DDDDF003CEDF7 /* SMSGLPixelBufferPool.h */,
 				54EA4EFC285DDDDF003CEDF7 /* SMSGLPixelBufferPool.m */,
 				154A865D285B2006009263EE /* SMSGLProgram.h */,
@@ -287,8 +284,7 @@
 			files = (
 				1515FA2928617519007A8CE8 /* SMSGLVertex.glsl in Resources */,
 				15BE06B82856E75400B5B014 /* LaunchScreen.storyboard in Resources */,
-				1515FA2D28617676007A8CE8 /* SMSGLPasstroughFragment_TwoInput.glsl in Resources */,
-				1515FA2B286175AE007A8CE8 /* SMSGLPasstroughFragment_OneInput.glsl in Resources */,
+				1515FA2B286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl in Resources */,
 				15BE06B52856E75400B5B014 /* Assets.xcassets in Resources */,
 				15BE06B32856E75300B5B014 /* Main.storyboard in Resources */,
 			);
