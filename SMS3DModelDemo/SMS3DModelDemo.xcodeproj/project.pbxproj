@@ -12,6 +12,7 @@
 		1515FA2B286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1515FA2A286175AE007A8CE8 /* SMSGLPasstroughFragment.glsl */; };
 		1515FA3028619973007A8CE8 /* UIImage+SMSGLExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515FA2F28619973007A8CE8 /* UIImage+SMSGLExtend.m */; };
 		1515FA3328619AAC007A8CE8 /* IMG_3902.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1515FA3228619AAC007A8CE8 /* IMG_3902.JPG */; };
+		1515FA3B2861B2B7007A8CE8 /* SMSGameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515FA3A2861B2B7007A8CE8 /* SMSGameWindow.m */; };
 		154A865F285B2006009263EE /* SMSGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A865E285B2006009263EE /* SMSGLProgram.m */; };
 		15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06A92856E75300B5B014 /* AppDelegate.m */; };
 		15BE06B02856E75300B5B014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06AF2856E75300B5B014 /* ViewController.m */; };
@@ -54,6 +55,8 @@
 		1515FA2E28619973007A8CE8 /* UIImage+SMSGLExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SMSGLExtend.h"; sourceTree = "<group>"; };
 		1515FA2F28619973007A8CE8 /* UIImage+SMSGLExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SMSGLExtend.m"; sourceTree = "<group>"; };
 		1515FA3228619AAC007A8CE8 /* IMG_3902.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3902.JPG; sourceTree = "<group>"; };
+		1515FA392861B2B7007A8CE8 /* SMSGameWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGameWindow.h; sourceTree = "<group>"; };
+		1515FA3A2861B2B7007A8CE8 /* SMSGameWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGameWindow.m; sourceTree = "<group>"; };
 		154A865D285B2006009263EE /* SMSGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLProgram.h; sourceTree = "<group>"; };
 		154A865E285B2006009263EE /* SMSGLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLProgram.m; sourceTree = "<group>"; };
 		15BE06A52856E75300B5B014 /* SMS3DModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMS3DModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +118,15 @@
 			path = Res;
 			sourceTree = "<group>";
 		};
+		1515FA382861B29C007A8CE8 /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				1515FA392861B2B7007A8CE8 /* SMSGameWindow.h */,
+				1515FA3A2861B2B7007A8CE8 /* SMSGameWindow.m */,
+			);
+			path = GameEngine;
+			sourceTree = "<group>";
+		};
 		15BE069C2856E75300B5B014 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 		15BE06A72856E75300B5B014 /* SMS3DModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1515FA382861B29C007A8CE8 /* GameEngine */,
 				1515FA3128619AA4007A8CE8 /* Res */,
 				15BE06DD28573C3B00B5B014 /* GL */,
 				15BE06A82856E75300B5B014 /* AppDelegate.h */,
@@ -330,6 +343,7 @@
 			files = (
 				1515FA3028619973007A8CE8 /* UIImage+SMSGLExtend.m in Sources */,
 				54EA4EFA285DD0F2003CEDF7 /* SMSGLBGRATexture.m in Sources */,
+				1515FA3B2861B2B7007A8CE8 /* SMSGameWindow.m in Sources */,
 				15BE06E32857680300B5B014 /* SMSGLContext.m in Sources */,
 				15BE06B02856E75300B5B014 /* ViewController.m in Sources */,
 				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
