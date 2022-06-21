@@ -100,7 +100,8 @@
 }
 
 - (int)uniformIndex:(NSString *)uniformName {
-    return glGetUniformLocation(_programHandle, [uniformName UTF8String]);
+    int result = glGetUniformLocation(_programHandle, [uniformName UTF8String]);
+    return result;
 }
 
 @end

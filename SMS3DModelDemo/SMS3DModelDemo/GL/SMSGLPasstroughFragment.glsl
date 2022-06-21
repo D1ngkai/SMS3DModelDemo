@@ -11,7 +11,7 @@ uniform vec2 iChannelResolution0;
 uniform vec2 iResolution;
 
 void main() {
-    vec2 uv = fragCoord / iResolution;
+    vec2 uv = fragCoord;
     fragColor = texture(iChannel0, uv);
 }
 

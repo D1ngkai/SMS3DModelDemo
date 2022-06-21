@@ -5,10 +5,10 @@ precision highp float;
 layout (location = 0) in vec2 position;
 layout (location = 1) in vec2 inputFragCoord;
 
-out vec2 textureCoordinate;
+out vec2 fragCoord;
 
 void main() {
     gl_Position =  vec4(position, 1.0, 1.0);
-    fragCoord = inputTextureCoordinate;
+    fragCoord = inputFragCoord;
 }
 

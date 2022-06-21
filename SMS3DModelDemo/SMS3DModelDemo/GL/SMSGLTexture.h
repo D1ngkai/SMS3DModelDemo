@@ -32,6 +32,7 @@ typedef NS_ENUM(NSUInteger, SMSGLTextureSetupStatus) {
 
 - (int)width;
 - (int)height;
+- (CGSize)size;
 
 - (void)releaseResource;
 

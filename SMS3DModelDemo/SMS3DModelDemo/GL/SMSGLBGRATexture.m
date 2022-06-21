@@ -98,6 +98,10 @@
     return (int)CVPixelBufferGetHeight(_pixelBuffer);
 }
 
+- (CGSize)size {
+    return CGSizeMake([self width], [self height]);
+}
+
 - (void)releaseResource {
     if (_texture) {
         CFRelease(_texture);

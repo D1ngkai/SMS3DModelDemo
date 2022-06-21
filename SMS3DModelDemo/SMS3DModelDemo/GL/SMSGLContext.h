@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "SMSGLTexture.h"
+#import "UIImage+SMSGLExtend.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

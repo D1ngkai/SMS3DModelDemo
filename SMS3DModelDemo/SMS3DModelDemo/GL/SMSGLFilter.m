@@ -84,10 +84,10 @@
 
     for (int i = 0; i < textures.count; ++i) {
         id<SMSGLTexture> texture = textures[i];
-        glActiveTexture(GL_TEXTURE0 + i);
+        glActiveTexture(GL_TEXTURE1 + i);
         glBindTexture(GL_TEXTURE_2D, [texture name]);
         NSString *iChannelUniformName = [NSString stringWithFormat:@"iChannel%d", i];
-        glUniform1i([self.program uniformIndex:iChannelUniformName], i);
+        glUniform1i([self.program uniformIndex:iChannelUniformName], i + 1);
         glTexParameteri(GL_TEXTURE_2D,
                         GL_TEXTURE_MIN_FILTER,
                         GL_LINEAR);
