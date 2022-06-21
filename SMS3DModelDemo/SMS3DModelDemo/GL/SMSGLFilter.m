@@ -40,11 +40,11 @@
         1.0f,  1.0f,
     };
 
-    static const GLfloat inputFragCoord[] = {
+    GLfloat inputFragCoord[] = {
         0.0f, 0.0f,
-        1.0f, 0.0f,
-        0.0f, 1.0f,
-        1.0f, 1.0f,
+        [canvas width], 0.0f,
+        0.0f, [canvas height],
+        [canvas width], [canvas height],
     };
 
     int width = [canvas width];

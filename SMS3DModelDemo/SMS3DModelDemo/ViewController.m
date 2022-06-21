@@ -22,6 +22,11 @@
 
 @implementation ViewController
 
+#pragma mark - dealloc
+- (void)dealloc {
+    [_iChannel0 releaseResource];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
