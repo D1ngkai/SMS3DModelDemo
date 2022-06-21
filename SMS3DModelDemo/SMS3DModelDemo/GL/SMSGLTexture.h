@@ -30,6 +30,9 @@ typedef NS_ENUM(NSUInteger, SMSGLTextureSetupStatus) {
 - (GLuint)name;
 - (GLenum)target;
 
+- (int)width;
+- (int)height;
+
 - (void)releaseResource;
 
 @end

@@ -89,6 +89,15 @@
     return CVOpenGLESTextureGetTarget(_texture);
 }
 
+- (int)width {
+    return (int)CVPixelBufferGetWidth(_pixelBuffer);
+}
+
+
+- (int)height {
+    return (int)CVPixelBufferGetHeight(_pixelBuffer);
+}
+
 - (void)releaseResource {
     if (_texture) {
         CFRelease(_texture);

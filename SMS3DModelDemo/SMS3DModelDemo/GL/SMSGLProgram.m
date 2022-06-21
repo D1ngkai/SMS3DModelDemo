@@ -99,4 +99,8 @@
     }
 }
 
+- (int)uniformIndex:(NSString *)uniformName {
+    return glGetUniformLocation(_programHandle, [uniformName UTF8String]);
+}
+
 @end

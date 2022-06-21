@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)deleteProgram;
 
+- (int)uniformIndex:(NSString *)uniformName;
+
 @end
 
 NS_ASSUME_NONNULL_END
