@@ -7,9 +7,14 @@
 
 #import "SMSGameWindow.h"
 
+#import "SMSGameEngine.h"
+
 @implementation SMSGameWindow {
     BOOL _isInBackground;
     BOOL _isVisible;
+    
+    SMSGameEngine *_gameEngine;
+    BOOL _isPlaying;
 }
 
 - (void)dealloc {
@@ -25,15 +30,27 @@
     if (self) {
         [self p_setup];
     }
+    
     return self;
 }
 
 - (void)p_setup {
-    self.contentScaleFactor = [UIScreen mainScreen].scale;
+    self.contentScaleFactor = [UIScreen mainScreen].nativeScale;
     self.backgroundColor = [UIColor clearColor];
 
     _isInBackground = [UIApplication sharedApplication].applicationState == UIApplicationStateBackground;
     _isVisible = NO;
+    
+    CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
+    eaglLayer.drawableProperties = @{
+        kEAGLDrawablePropertyRetainedBacking : @NO,
+        kEAGLDrawablePropertyColorFormat : kEAGLColorFormatSRGBA8
+    };
+    eaglLayer.opaque = YES;
+    
+    _gameEngine = [[SMSGameEngine alloc] init];
+    [_gameEngine bindEAGLDrawable:eaglLayer];
+    
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(applicationDidBecomeActive:)
@@ -45,12 +62,26 @@
                                                object:nil];
 }
 
+- (void)applicationDidBecomeActive:(NSNotification*)notification {
+    _isInBackground = NO;
+    if (_isVisible) {
+        [self play];
+    }
+}
+
+- (void)applicationWillResignActive:(NSNotification*)notification {
+    _isInBackground = YES;
+    [self pause];
+}
+
+
+
 - (void)setBounds:(CGRect)bounds {
     CGRect oldBounds = self.bounds;
     [super setBounds:bounds];
     if (oldBounds.size.width != bounds.size.width ||
         oldBounds.size.height != bounds.size.height) {
-//        [pagSurface updateSize];
+        [_gameEngine updateEAGLDrawableSize];
     }
 }
 
@@ -59,7 +90,7 @@
     [super setFrame:frame];
     if (oldRect.size.width != frame.size.width ||
         oldRect.size.height != frame.size.height) {
-//        [pagSurface updateSize];
+        [_gameEngine updateEAGLDrawableSize];
     }
 }
 
@@ -67,7 +98,7 @@
     CGFloat oldScaleFactor = self.contentScaleFactor;
     [super setContentScaleFactor:scaleFactor];
     if (oldScaleFactor != scaleFactor) {
-//        [pagSurface updateSize];
+        [_gameEngine updateEAGLDrawableSize];
     }
 }
 
@@ -92,32 +123,30 @@
         return;
     }
     _isVisible = visible;
-    if (_isVisible) {
-        [self p_startPlaying];
-    } else {
-        [self p_stopPlaying];
+}
+
+#pragma mark - Implement
+
+- (BOOL)isPlaying {
+    return _isPlaying;
+}
+
+- (void)play {
+    if (_isPlaying) {
+        return;
     }
+    
+    _isPlaying = YES;
+    [_gameEngine play];
 }
 
-- (void)p_startPlaying {
-
-}
-
-- (void)p_stopPlaying {
-
-}
-
-- (void)applicationDidBecomeActive:(NSNotification*)notification {
-    _isInBackground = NO;
-    if (_isVisible) {
-        [self p_startPlaying];
+- (void)pause {
+    if (!_isPlaying) {
+        return;
     }
+    
+    _isPlaying = NO;
+    [_gameEngine pause];
 }
-
-- (void)applicationWillResignActive:(NSNotification*)notification {
-    _isInBackground = YES;
-    [self p_stopPlaying];
-}
-
 
 @end

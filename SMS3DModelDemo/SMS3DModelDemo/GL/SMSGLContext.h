@@ -8,11 +8,13 @@
 #import <Foundation/Foundation.h>
 
 #import "SMSGLTexture.h"
+#import "SMSGLProgram.h"
+#import "SMSGLDevice.h"
+#import "SMSGLBGRATexture.h"
+#import "SMSGLPixelBufferPool.h"
 #import "UIImage+SMSGLExtend.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class SMSGLDevice, SMSGLProgram;
 
 @interface SMSGLContext : NSObject
 

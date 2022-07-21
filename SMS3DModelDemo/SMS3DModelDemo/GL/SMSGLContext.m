@@ -7,11 +7,6 @@
 
 #import "SMSGLContext.h"
 
-#import "SMSGLProgram.h"
-#import "SMSGLDevice.h"
-#import "SMSGLBGRATexture.h"
-#import "SMSGLPixelBufferPool.h"
-
 static void *SMSGLContextRenderingQueueKey;
 
 @interface SMSGLContext () {

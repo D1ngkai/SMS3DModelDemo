@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SMSGameWindow : UIView
 
+@property (nonatomic, readonly) BOOL isPlaying;
+
+- (void)play;
+
+- (void)pause;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -25,6 +25,8 @@
 		15BE06D12856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */; };
 		15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */; };
 		15BE06E32857680300B5B014 /* SMSGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06E22857680300B5B014 /* SMSGLContext.m */; };
+		5488C0FC28897E6400B69E1D /* SMSGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5488C0FB28897E6400B69E1D /* SMSGameEngine.m */; };
+		5488C10028898AA600B69E1D /* SMSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5488C0FF28898AA600B69E1D /* SMSWeakProxy.m */; };
 		54EA4EFA285DD0F2003CEDF7 /* SMSGLBGRATexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EA4EF9285DD0F2003CEDF7 /* SMSGLBGRATexture.m */; };
 		54EA4EFD285DDDDF003CEDF7 /* SMSGLPixelBufferPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EA4EFC285DDDDF003CEDF7 /* SMSGLPixelBufferPool.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,10 @@
 		15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLDevice.m; sourceTree = "<group>"; };
 		15BE06E12857680300B5B014 /* SMSGLContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLContext.h; sourceTree = "<group>"; };
 		15BE06E22857680300B5B014 /* SMSGLContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLContext.m; sourceTree = "<group>"; };
+		5488C0FA28897E6400B69E1D /* SMSGameEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGameEngine.h; sourceTree = "<group>"; };
+		5488C0FB28897E6400B69E1D /* SMSGameEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGameEngine.m; sourceTree = "<group>"; };
+		5488C0FE28898AA600B69E1D /* SMSWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSWeakProxy.h; sourceTree = "<group>"; };
+		5488C0FF28898AA600B69E1D /* SMSWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSWeakProxy.m; sourceTree = "<group>"; };
 		54EA4EF7285DCF16003CEDF7 /* SMSGLTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLTexture.h; sourceTree = "<group>"; };
 		54EA4EF8285DD0F2003CEDF7 /* SMSGLBGRATexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLBGRATexture.h; sourceTree = "<group>"; };
 		54EA4EF9285DD0F2003CEDF7 /* SMSGLBGRATexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLBGRATexture.m; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 			children = (
 				1515FA392861B2B7007A8CE8 /* SMSGameWindow.h */,
 				1515FA3A2861B2B7007A8CE8 /* SMSGameWindow.m */,
+				5488C0FA28897E6400B69E1D /* SMSGameEngine.h */,
+				5488C0FB28897E6400B69E1D /* SMSGameEngine.m */,
 			);
 			path = GameEngine;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 		15BE06A72856E75300B5B014 /* SMS3DModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5488C0FD28898A7E00B69E1D /* Utils */,
 				1515FA382861B29C007A8CE8 /* GameEngine */,
 				1515FA3128619AA4007A8CE8 /* Res */,
 				15BE06DD28573C3B00B5B014 /* GL */,
@@ -206,6 +215,15 @@
 				1515FA2F28619973007A8CE8 /* UIImage+SMSGLExtend.m */,
 			);
 			path = GL;
+			sourceTree = "<group>";
+		};
+		5488C0FD28898A7E00B69E1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5488C0FE28898AA600B69E1D /* SMSWeakProxy.h */,
+				5488C0FF28898AA600B69E1D /* SMSWeakProxy.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,11 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5488C10028898AA600B69E1D /* SMSWeakProxy.m in Sources */,
 				1515FA3028619973007A8CE8 /* UIImage+SMSGLExtend.m in Sources */,
 				54EA4EFA285DD0F2003CEDF7 /* SMSGLBGRATexture.m in Sources */,
 				1515FA3B2861B2B7007A8CE8 /* SMSGameWindow.m in Sources */,
 				15BE06E32857680300B5B014 /* SMSGLContext.m in Sources */,
 				15BE06B02856E75300B5B014 /* ViewController.m in Sources */,
+				5488C0FC28897E6400B69E1D /* SMSGameEngine.m in Sources */,
 				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
 				15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */,
 				1515FA2728616E34007A8CE8 /* SMSGLFilter.m in Sources */,
