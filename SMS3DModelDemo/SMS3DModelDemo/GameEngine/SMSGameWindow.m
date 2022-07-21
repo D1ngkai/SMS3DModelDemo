@@ -74,8 +74,6 @@
     [self pause];
 }
 
-
-
 - (void)setBounds:(CGRect)bounds {
     CGRect oldBounds = self.bounds;
     [super setBounds:bounds];

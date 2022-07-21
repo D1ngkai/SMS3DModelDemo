@@ -20,6 +20,7 @@
     SMSGLContext *_context;
     
     CADisplayLink *_gameLoop;
+    BOOL _isPlaying;
 }
 
 - (void)dealloc {
@@ -87,15 +88,17 @@
 }
 
 - (void)p_onGameLoop:(CADisplayLink *)gameLoop {
-    NSLog(@"%s", __func__);
+    if (!_isPlaying) {
+        return;
+    }
 }
 
 - (void)play {
-    
+    _isPlaying = YES;
 }
 
 - (void)pause {
-    
+    _isPlaying = NO;
 }
 
 @end
