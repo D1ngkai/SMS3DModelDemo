@@ -37,7 +37,7 @@ static void *SMSGLContextRenderingQueueKey;
         // Rendering Queue
         SMSGLContextRenderingQueueKey = &SMSGLContextRenderingQueueKey;
         _renderingQueue = dispatch_queue_create("com.sms.renderingQueue",
-                                                NULL);
+                                                DISPATCH_QUEUE_SERIAL);
         dispatch_queue_set_specific(_renderingQueue,
                                     SMSGLContextRenderingQueueKey,
                                     (void *)SMSGLContextRenderingQueueKey,

@@ -28,4 +28,14 @@
     [self.view addSubview:gameWindow];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.gameWindow play];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.gameWindow pause];
+}
+
 @end
