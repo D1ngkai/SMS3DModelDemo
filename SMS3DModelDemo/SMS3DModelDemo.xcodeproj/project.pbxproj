@@ -25,6 +25,7 @@
 		15BE06D12856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06D02856E75500B5B014 /* SMS3DModelDemoUITestsLaunchTests.m */; };
 		15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */; };
 		15BE06E32857680300B5B014 /* SMSGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE06E22857680300B5B014 /* SMSGLContext.m */; };
+		547270FF288C34B6004D2A01 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 547270FD288C34B6004D2A01 /* AAPLMathUtilities.m */; };
 		5488C0FC28897E6400B69E1D /* SMSGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5488C0FB28897E6400B69E1D /* SMSGameEngine.m */; };
 		5488C10028898AA600B69E1D /* SMSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5488C0FF28898AA600B69E1D /* SMSWeakProxy.m */; };
 		54EA4EFA285DD0F2003CEDF7 /* SMSGLBGRATexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EA4EF9285DD0F2003CEDF7 /* SMSGLBGRATexture.m */; };
@@ -80,6 +81,8 @@
 		15BE06DF28573C4F00B5B014 /* SMSGLDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLDevice.m; sourceTree = "<group>"; };
 		15BE06E12857680300B5B014 /* SMSGLContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGLContext.h; sourceTree = "<group>"; };
 		15BE06E22857680300B5B014 /* SMSGLContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGLContext.m; sourceTree = "<group>"; };
+		547270FD288C34B6004D2A01 /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
+		547270FE288C34B6004D2A01 /* AAPLMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
 		5488C0FA28897E6400B69E1D /* SMSGameEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSGameEngine.h; sourceTree = "<group>"; };
 		5488C0FB28897E6400B69E1D /* SMSGameEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSGameEngine.m; sourceTree = "<group>"; };
 		5488C0FE28898AA600B69E1D /* SMSWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSWeakProxy.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 		5488C0FD28898A7E00B69E1D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				547270FE288C34B6004D2A01 /* AAPLMathUtilities.h */,
+				547270FD288C34B6004D2A01 /* AAPLMathUtilities.m */,
 				5488C0FE28898AA600B69E1D /* SMSWeakProxy.h */,
 				5488C0FF28898AA600B69E1D /* SMSWeakProxy.m */,
 			);
@@ -369,6 +374,7 @@
 				15BE06AA2856E75300B5B014 /* AppDelegate.m in Sources */,
 				15BE06E028573C4F00B5B014 /* SMSGLDevice.m in Sources */,
 				1515FA2728616E34007A8CE8 /* SMSGLFilter.m in Sources */,
+				547270FF288C34B6004D2A01 /* AAPLMathUtilities.m in Sources */,
 				54EA4EFD285DDDDF003CEDF7 /* SMSGLPixelBufferPool.m in Sources */,
 				15BE06BB2856E75400B5B014 /* main.m in Sources */,
 				154A865F285B2006009263EE /* SMSGLProgram.m in Sources */,
@@ -559,6 +565,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,6 +600,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

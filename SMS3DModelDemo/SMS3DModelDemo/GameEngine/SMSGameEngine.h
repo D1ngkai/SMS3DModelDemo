@@ -20,6 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)pause;
 
+- (void)W;
+- (void)A;
+- (void)S;
+- (void)D;
+
 @end
 
 NS_ASSUME_NONNULL_END

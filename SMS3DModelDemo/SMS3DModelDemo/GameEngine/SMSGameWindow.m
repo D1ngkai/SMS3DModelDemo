@@ -44,7 +44,7 @@
     CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
     eaglLayer.drawableProperties = @{
         kEAGLDrawablePropertyRetainedBacking : @NO,
-        kEAGLDrawablePropertyColorFormat : kEAGLColorFormatSRGBA8
+        kEAGLDrawablePropertyColorFormat : kEAGLColorFormatRGBA8
     };
     eaglLayer.opaque = YES;
     
@@ -145,6 +145,22 @@
     
     _isPlaying = NO;
     [_gameEngine pause];
+}
+
+- (void)W {
+    [_gameEngine W];
+}
+
+- (void)A {
+    [_gameEngine A];
+}
+
+- (void)S {
+    [_gameEngine S];
+}
+
+- (void)D {
+    [_gameEngine D];
 }
 
 @end

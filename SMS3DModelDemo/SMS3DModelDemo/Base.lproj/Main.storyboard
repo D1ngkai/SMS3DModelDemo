@@ -16,9 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACc-k3-6DU">
+                                <rect key="frame" x="177" y="742" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bhd-7r-8oC"/>
+                                    <constraint firstAttribute="width" constant="60" id="lLB-3D-4YV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="W"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiI-c9-gWJ">
+                                <rect key="frame" x="177" y="802" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Y0s-4Z-RRa"/>
+                                    <constraint firstAttribute="width" constant="60" id="lzy-Ob-351"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="S"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iH-Wy-Eg6">
+                                <rect key="frame" x="237" y="802" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3g1-l0-uqA"/>
+                                    <constraint firstAttribute="height" constant="60" id="cgX-mg-1e6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="D"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQw-2Q-IvD">
+                                <rect key="frame" x="109" y="802" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="CEe-rf-QWo"/>
+                                    <constraint firstAttribute="height" constant="60" id="FUc-C5-91D"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="A"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UiI-c9-gWJ" firstAttribute="leading" secondItem="cQw-2Q-IvD" secondAttribute="trailing" constant="8" symbolic="YES" id="2QS-vs-FYu"/>
+                            <constraint firstItem="UiI-c9-gWJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DOk-39-R5s"/>
+                            <constraint firstItem="0iH-Wy-Eg6" firstAttribute="leading" secondItem="UiI-c9-gWJ" secondAttribute="trailing" id="JHx-Dt-8re"/>
+                            <constraint firstItem="ACc-k3-6DU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V3J-vW-h1R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UiI-c9-gWJ" secondAttribute="bottom" id="Z6s-S5-yhS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ACc-k3-6DU" secondAttribute="bottom" constant="60" id="hk6-77-cEl"/>
+                            <constraint firstItem="0iH-Wy-Eg6" firstAttribute="centerY" secondItem="UiI-c9-gWJ" secondAttribute="centerY" id="scI-xx-B3e"/>
+                            <constraint firstItem="cQw-2Q-IvD" firstAttribute="centerY" secondItem="UiI-c9-gWJ" secondAttribute="centerY" id="tQk-Rs-7oe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="a" destination="cQw-2Q-IvD" id="v9x-iA-hNX"/>
+                        <outlet property="d" destination="0iH-Wy-Eg6" id="PcL-Oi-BoC"/>
+                        <outlet property="s" destination="UiI-c9-gWJ" id="j0i-fh-YxD"/>
+                        <outlet property="w" destination="ACc-k3-6DU" id="MHG-jk-CU4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
